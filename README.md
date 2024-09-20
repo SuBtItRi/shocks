@@ -1,1 +1,1 @@
-subtitri.github.io/shocks/
+https://subtitri.github.io/shocks/
