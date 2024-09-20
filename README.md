@@ -1,2 +1,1 @@
-# shocks
- 
+subtitri.github.io/shocks/
