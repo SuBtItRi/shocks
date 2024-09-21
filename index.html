@@ -10,31 +10,91 @@
     <header class="header">
         <div class="container">
             <div class="header_wrap">
-                <img src="asstes/img/SHOCKS.png" alt="logo" class="header_logo">
+                <a href="index.html#main">
+                    <img src="asstes/img/SHOCKS.svg" alt="logo" class="header_logo">
+                </a>
                 <div class="header_menu">
-                    <button class="header_menu_close">
-                        <img src="asstes/img/burger.svg" alt="">
-                    </button>
-                    <div class="header_menu_open">
-
-                    </div>
+                    <a href="index.html#main" class="header_menu_item">Главная</a>
+                    <a href="index.html#catalog" class="header_menu_item">Каталог</a>
+                    <a href="about.html" class="header_menu_item">О нас</a>
+                    <a href="#" class="header_menu_item">
+                        <img src="asstes/img/buy.svg" alt="buy">
+                    </a>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
         <div class="container">
             <div class="main_wrap">
                 <div class="main_title">
                     <h1 class="main_title_text">
                         Добро пожаловать в обувной магазин
                     </h1>
-                    <img src="asstes/img/SHOCKS.png" alt="SHOCKS">
+                    <img src="asstes/img/SHOCKS_b.svg" alt="SHOCKS_b">
                 </div>
             </div>
         </div>
     </main>
-    <section class="catalog">
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages_wrap">
+                <h1 class="advantages_title">
+                    ПРЕИМУЩЕСТВА НАШЕГО МАГАЗИНА
+                </h1>
+                <div class="advantages_blocks">
+                    <div class="advantages_block l-block l-block_pheol">
+                        <p class="advantages_block_text">
+                            Здесь вы найдёте самые стильные и качественные модели для всей семьи. 
+                        </p>
+                    </div>
+                    <div class="r-block">
+                        <div class="advantages_block r-block_pheol">
+                            <p class="advantages_block_text">
+                                Мы предлагаем широкий ассортимент обуви для мужчин, женщин и детей, а также аксессуары и средства по уходу за обувью.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages_block l-block l-block_pheol">
+                        <p class="advantages_block_text">
+                            В нашем магазине вы сможете найти обувь для любого случая: от повседневной до спортивной и модельной. Мы следим за последними трендами и новинками, чтобы предложить вам только самое лучшее.
+                        </p>
+                    </div>
+                    <div class="advantages_block">
+                        <img src="asstes/img/кроссы_без_фона.png" alt="block_img">
+                        <h3 class="advantages_block_title r-title">
+                            ОГРОМНЫЙ ВЫБОР ОБУВИ И АКСЕССУАРОВ
+                        </h3>
+                    </div>
+                    <div class="advantages_block">
+                        <p class="advantages_block_title">
+                            ВЫСОКОЕ КАЧЕСТВО ТОВАРОВ ОТ ПРОВЕРЕННЫХ ПРОИЗВОДИТЕЛЕЙ
+                        </p>
+                        <img src="asstes/img/высокое качество.png" alt="block_img">
+                    </div>
+                    <div class="advantages_block">
+                        <img src="asstes/img/скидки и акции.png" alt="block_img">
+                        <p class="advantages_block_title r-title">
+                            ДОСТУПНЫЕ ЦЕНЫ И РЕГУЛЯРНЫЕ СКИДКИ И АКЦИИ
+                        </p>
+                    </div>
+                    <div class="advantages_block">
+                        <p class="advantages_block_title">
+                            БЫСТРАЯ ДОСТАВКА ПО ВСЕЙ СТРАНЕ ПРЯМО К ДВЕРИ
+                        </p>
+                        <img src="asstes/img/быстрая доставка.png" alt="block_img">
+                    </div>
+                    <div class="advantages_block">
+                        <img src="asstes/img/гарантия качества.png" alt="block_img">
+                        <p class="advantages_block_title r-title">
+                            МЫ ОТВЕЧАЕМ ЗА КАЧЕСТВО НАШЕЙ ПРОДУКЦИИ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="catalog_title">Каталог товаров</h2>
             <div class="catalog_wrap">
@@ -64,19 +124,281 @@
                         <input placeholder="Поиск" class="catalog_search"></input>
                     </div>
                     <div class="catalog_products">
-                        <div class="test">
-                            <div class="test_imgs">
-                                <img src="asstes/img/кроссы1.png" alt="" class="test_img1">
-                                <div class="imgs23">
-                                    <img src="asstes/img/кроссы2.png" alt="" class="test_img23">
-                                    <img src="asstes/img/кроссы3.png" alt="" class="test_img23">
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
                                 </div>
                             </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
+                        </div>
+                        <div class="catalog_products_block">
+                            <div class="catalog_products_block_photes">
+                                <img src="asstes/img/кроссы1.png" alt="" class="catalog_products_block_photes">
+                                <div class="catalog_products_block_photes2">
+                                    <img src="asstes/img/кроссы2.png" alt="" class="catalog_products_block_photes">
+                                    <img src="asstes/img/кроссы3.png" alt="" class="catalog_products_block_photes">
+                                </div>
+                            </div>
+                            <h4 class="catalog_products_block_name">Raf Simons</h4>
+                            <p class="catalog_products_block_subtitle">Коротко о товаре:</p>
+                            <p class="catalog_products_block_description">
+                                Цвет товара: черный
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Пол: унисекс
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Вид спорта: бег
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал верха: искусственная кожа, текстиль
+                            </p>
+                            <p class="catalog_products_block_description">
+                                Материал подкладки: искусственная кожа, текстиль
+                            </p>
+                            <h4 class="catalog_products_block_price">17.599 ₽</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrap">
+                <a href="index.html">
+                    <img src="asstes/img/SHOCKS.svg" alt="logo">
+                </a>
+                <div class="footer_nav">
+                    <div class="footer_block">
+                        <h3 class="footer_block_title">
+                            Навигация
+                        </h3>
+                        <a href="index.html#catalog" class="footer_block_subtitle">
+                            Каталог товаров
+                        </a>
+                        <button class="footer_block_btn">
+                            Подписка на расписку
+                        </button>
+                    </div>
+                    <div class="footer_block">
+                        <h3 class="footer_block_title">
+                            О нас
+                        </h3>
+                        <a href="about.html#company" class="footer_block_subtitle">
+                            Компания
+                        </a>
+                        <a href="about.html#reviews" class="footer_block_subtitle">
+                            Отзывы
+                        </a>
+                    </div>
+                    <div class="footer_block">
+                        <h3 class="footer_block_title">
+                            Оставайтесь на связи
+                        </h3>
+                        <a href="#" class="footer_block_subtitle">
+                            X-XXX-XXX-XX-XX
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_messengers">
+                    <a href="#">
+                        <img src="asstes/img/wb_logo.png" alt="logo">
+                    </a>
+                    <a href="#">
+                        <img src="asstes/img/tg_logo.png" alt="logo">
+                    </a>
+                    <a href="#">
+                        <img src="asstes/img/ozon_logo.png" alt="logo">
+                    </a>
+                    <a href="#">
+                        <img src="asstes/img/avito_logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -7,8 +7,16 @@
     font-family: JetBrains Mono;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EDEDED;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -17,6 +25,7 @@ body {
 }
 
 .header {
+    z-index: 100;
     background-color: #1d1616;
     position: fixed;
     width: 100%;
@@ -27,15 +36,12 @@ body {
         align-items: center;
     }
     &_menu {
-        &_close {
-            background: none;
-            border: none;
-            cursor: pointer;
-            & img {
-                width: 70px;
-                height: auto;
-            }
-        }
+        &_item {
+            font-size: 40px;
+            font-weight: 500;
+            color: #fff;
+            padding-left: 45px;
+        } 
     }
 }
 
@@ -54,20 +60,89 @@ body {
         padding: 15px 25px;
         max-width: 700px;
         max-height: 327px;
-        background-color: #000;
+        background-color: #fff;
         border-radius: 35px;
         &_text {
             text-align: center;
             font-size: 50px;
             font-weight: 400;
-            color: #fff;
+            color: #000;
             padding-bottom: 20px;
         }
     }
 }
 
+.advantages {
+    padding: 100px 0;
+    background-color: #000;
+    color: #fff;
+    &_wrap {
+        position: relative;
+    }
+    &_title {
+        text-align: center;
+        font-size: 70px;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+    &_blocks {
+        display: flex;
+        flex-direction: column; 
+    }
+    &_block {
+        margin-top: 50px;
+        &:first-child {
+            margin-top: 0;
+        }
+        display: flex;
+        justify-content: space-between;
+        border-radius: 50px;
+        &_text {
+            padding: 25px;
+            font-size: 32px;
+            font-weight: 400;
+        }
+        &_title {
+            font-size: 60px;
+            font-weight: 500;
+            width: 910px;
+            text-transform: uppercase;
+        }
+        & img {
+            width: 30%;
+        }
+    }
+}
+
+.r-title {
+    position: absolute;
+    right: 0;
+    text-align: end;
+}
+
+.l-block {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 910px;
+    &_pheol {
+        background-image: linear-gradient(to bottom left, #CE80D2, #C062CA, #6A426C);
+    }
+}
+
+.r-block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    &_pheol {
+        background-image: linear-gradient(to bottom right, #CE80D2, #C062CA, #6A426C);
+        width: 910px;
+    }
+}
+
 .catalog {
-    padding-top: 100px;
+    margin: 100px 0;
     &_wrap {
         display: flex;
         padding-top: 100px;
@@ -109,7 +184,7 @@ body {
         }
         &_title {
             font-size: 24px;
-            font-weight: 400;
+            font-weight: 500;
         }
     }
     &_search {
@@ -128,30 +203,144 @@ body {
         }
     }
     &_products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 60px;
         padding-top: 60px;
+        &_block {
+            padding: 10px;
+            background-color: #DFDFDF;
+            max-width: 214px;
+            border-radius: 5px;
+            &_photes {
+                display: flex;
+                border-radius: 5px;
+                border: #000 solid 1px;
+            }
+            &_name {
+                font-size: 24px;
+                font-weight: 500;
+                padding-top: 15px;
+            }
+            &_subtitle {
+                padding-top: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #202020;
+            }
+            &_description {
+                font-size: 12px;
+                font-weight: 400;
+                color: #909090;
+            }
+            &_price {
+                font-size: 24px;
+                font-weight: 500;
+                padding-top: 4px;
+            }
+        }
     }
 }
 
-.test {
-    width: 225px;
-    height: 300px;
-    background-color: #909090;
-    padding: 10px;
-    &_img1 {
-        width: 137.74px;
-        height: 146px;
-    }
-    &_img23 {
-        width: 69.81px;
-        height: 73px;
-    }
-    &_imgs {
+.footer {
+    background-color: #000;
+    padding: 106px 0;
+    &_wrap {
         display: flex;
-        width: 207.55px;
-        height: 146px; 
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
     }
-    &_imgs23 {
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+    }
+    &_block {
         display: flex;
         flex-direction: column;
+        &_title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+        &_subtitle {
+            padding-top: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            &:first-child{
+                padding-top: 0;
+            }
+        }
+        &_btn {
+            margin-top: 10px;
+            padding: 7px 10px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6600FF;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+    &_messengers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+.about {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_title {
+        padding-top: 220px;
+        font-size: 68px;
+        font-weight: 600;
+        text-align: center;
+    }
+    &_description {
+        padding-top: 42px;
+        font-size: 16pz;
+        font-weight: 400;
+    }
+}
+
+.reviews {
+    padding-top: 50px;
+    &_title {
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+
+.review {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 0 rgb(97, 97, 97, .2);
+    &_title {
+        display: flex;
+    }
+    &_ava {
+       margin-right: 30px;
+       border-radius: 50px;
+    }
+    &_user-name {
+        padding-top: 7px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &_text {
+        margin-left: 75+30px;
+        font-size: 16px;
+        font-weight: 400;
     }
 }
