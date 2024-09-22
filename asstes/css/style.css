@@ -184,7 +184,11 @@ a {
   position: absolute;
   right: 0;
   text-align: end;
-  width: 150px;
+}
+@media (max-width: 376px) {
+  .r-title {
+    width: 150px;
+  }
 }
 
 .l-block {
