@@ -444,19 +444,32 @@ a {
         font-size: 68px;
         font-weight: 600;
         text-align: center;
+        @media (max-width: 376px) {
+            font-size: 34px;
+            padding-top: 110px;
+        }
     }
     &_description {
         padding-top: 42px;
         font-size: 16pz;
         font-weight: 400;
+        @media (max-width: 376px) {
+            font-size: 14x;
+            padding-top: 21px;
+        }
     }
 }
 
 .reviews {
     padding-top: 50px;
+    @media (max-width: 376px) {
+        padding-top: 25px;
+    }
     &_title {
         font-size: 32px;
         font-weight: 500;
+        @media (max-width: 376px) {
+        }
     }
 }
 
@@ -465,6 +478,9 @@ a {
     padding: 25px;
     border-radius: 25px;
     box-shadow: 0 0 30px 0 rgb(97, 97, 97, .2);
+    @media (max-width: 376px) {
+        margin-top: 12.5px;
+    }
     &_title {
         display: flex;
     }
@@ -482,5 +498,9 @@ a {
         margin-left: 75+30px;
         font-size: 16px;
         font-weight: 400;
+        @media (max-width: 376px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
     }
 }
