@@ -44,6 +44,13 @@ a {
             font-weight: 500;
             color: #fff;
             padding-left: 45px;
+            &_avatar {
+                width: 50px;
+                height: auto;
+                background-color: #fff;
+                border-radius: 50px;
+                margin-bottom: -5px;
+            }
         } 
         &_burger {
             display: none;
@@ -223,6 +230,7 @@ a {
     &_filters {
         &_items {
             padding-top: 60px;
+            cursor: pointer;
         }
         &_item {
             @media (max-width: 1000px) {
@@ -306,6 +314,7 @@ a {
             row-gap: 15px;
         }
         &_block {
+            cursor: pointer;
             padding: 10px;
             background-color: #DFDFDF;
             max-width: 214px;
@@ -500,4 +509,77 @@ a {
             margin-top: 10px;
         }
     }
+}
+
+.login {
+    padding-top: 50px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_wrap {
+        padding: 50px;
+        background-color: #000;
+        border-radius: 25px;
+        color: #fff;
+    }
+    &_title {
+        display: flex;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+        &_text {
+            font-size: 30px;
+            font-weight: 900;
+            padding-left: 24px;
+            color: #fff;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+    &_boxes {
+        margin-top: 25px;
+    }
+    &_box {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+        &_text {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        &_input {
+            width: 95%;
+            font-size: 14px;
+            color: #909090;
+            border-radius: 25px;
+            padding: 14px 0;
+            padding-left: 20px;
+            &::placeholder {
+                font-size: 18px;
+                color: #909090;
+            }
+        }
+    }
+    &_btn {
+        display: flex;
+        justify-content: center;
+        margin: 50px auto 0 auto;
+        background-color: #330000;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 14px;
+        &_text {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            color: #8D0000;
+        }
+    }
+}
+
+.selected {
+    color: #8D0000;
 }
